@@ -18,10 +18,10 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import com.company.services.UserDetailsServiceImpl;
 
 public class JwtAuthenticationFilter extends OncePerRequestFilter{
-	
+
 	@Autowired
 	JwtTokenProvider jwtTokenProvider;
-	
+
 	@Autowired
 	UserDetailsServiceImpl userDetailsService;
 
