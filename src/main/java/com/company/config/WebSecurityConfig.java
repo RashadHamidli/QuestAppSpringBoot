@@ -1,4 +1,10 @@
 package com.company.config;
 
-public class WebSecurityConfig {
+import com.company.security.JwtAuthenticationEntryPoint;
+import com.company.services.UserDetailsServiceImpl;
+
+public class WebSecurityConfig  extends SecurityConfig{
+    public WebSecurityConfig(UserDetailsServiceImpl userDetailsService, JwtAuthenticationEntryPoint handler) {
+        super(userDetailsService, handler);
+    }
 }
