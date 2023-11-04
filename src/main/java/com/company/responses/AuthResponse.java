@@ -1,5 +1,6 @@
 package com.company.responses;
 
+
 import lombok.Data;
 
 @Data
